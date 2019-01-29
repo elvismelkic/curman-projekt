@@ -1,0 +1,16 @@
+.header {
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-box {
+    height: 100%;
+    padding: 1rem 4rem;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
