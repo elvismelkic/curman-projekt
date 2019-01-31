@@ -1,0 +1,21 @@
+.section-home {
+  height: 50rem;
+
+  &--about {
+    background-image:
+      linear-gradient(
+        rgba($color-white, .9),
+        rgba($color-white, .9)
+      ), url("../img/background-drawing.jpg");
+    background-size: cover;
+  }
+
+  &--services {
+    background-image:
+      linear-gradient(
+        rgba($color-white, .9),
+        rgba($color-white, .9)
+      ), url("../img/background-structure.jpg");
+    background-size: cover;
+  }
+}

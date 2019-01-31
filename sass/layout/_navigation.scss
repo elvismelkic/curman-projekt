@@ -4,19 +4,22 @@
   }
 
   &__item {
-    padding: 2rem;
+    padding: 1rem .4rem;
+    margin: 0 1.6rem;
     position: relative;
+    border-bottom: solid 4px transparent;
+    transition: all .2s;
     cursor: pointer;
 
     &:hover {
-      background-color: $color-primary;
+      border-bottom: solid 4px $color-primary;
     }
   }
 
   &__link {
     &:link,
     &:visited {
-      color: $color-primary;
+      color: $color-grey-dark;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 1.6rem;
@@ -24,20 +27,14 @@
     }
   }
 
-  &__item:hover &__link {
-    &:link,
-    &:visited {
-      color: $color-white;
-    }
-  }
-
   &__sub-list {
     display: none;
     position: absolute;
-    top: 6.7rem;
+    top: 5.1rem;
     left: 0;
     width: 25rem;
-    background-color: $color-primary;
+    background-color: $color-white;
+    box-shadow: 0 .6rem 1.2rem rgba($color-black, .2);
   }
 
   &__item:hover &__sub-list {
@@ -46,16 +43,12 @@
 
   &__sub-item {
     padding: 1rem 2rem;
+    border-bottom: solid 4px transparent;
+    transition: all .2s;
 
     &:hover {
-      background-color: $color-white;
-
-      & .nav__link {
-        &:link,
-        &:visited {
-          color: $color-primary;
-        }
-      }
+      background-color: $color-grey-ultralight;
+      border-bottom: solid 4px $color-primary;
     }
   }
 

@@ -7,7 +7,8 @@
 @import "base/typography";
 @import "base/utilities";
 
-// insert sass components here
+@import "components/article";
+@import "components/button"; 
 
 @import "layout/footer";
 @import "layout/header";
