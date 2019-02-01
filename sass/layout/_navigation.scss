@@ -1,6 +1,7 @@
 .nav {
   &__list {
     display: flex;
+    margin: 0 2rem;
   }
 
   &__item {
@@ -50,6 +51,10 @@
       background-color: $color-grey-ultralight;
       border-bottom: solid 4px $color-primary;
     }
+  }
+
+  &__active {
+    border-bottom: solid 4px $color-primary;
   }
 
 }

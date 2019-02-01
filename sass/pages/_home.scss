@@ -1,5 +1,6 @@
 .section-home {
-  height: 50rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 
   &--about {
     background-image:
@@ -17,5 +18,41 @@
         rgba($color-white, .9)
       ), url("../img/background-structure.jpg");
     background-size: cover;
+    background-position: center center;
   }
+}
+
+.section-about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image:
+    linear-gradient(
+      rgba($color-white, .9),
+      rgba($color-white, .9)
+    ), url("../img/background-collaboration-bw.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.section-clients {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image:
+    linear-gradient(
+      rgba($color-white, .9),
+      rgba($color-white, .9)
+    ), url("../img/background-handshake.jpg");
+  background-size: cover;
+}
+
+.section-contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image:
+    linear-gradient(
+      rgba($color-white, .9),
+      rgba($color-white, .9)
+    ), url("../img/background-contact.jpg");
+  background-size: cover;
+  background-position: center center;
 }

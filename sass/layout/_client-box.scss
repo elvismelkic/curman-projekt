@@ -1,0 +1,21 @@
+.client-box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__logo-box {
+    width: 19rem;
+    height: 15rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: $color-white;
+  }
+
+  &__logo {
+    width: 15rem;
+    align-self: center;
+  }
+}
