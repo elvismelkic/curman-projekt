@@ -5,30 +5,30 @@
   }
 
   &__item {
-    padding: 1rem .4rem;
     margin: 0 1.6rem;
     position: relative;
-    border-bottom: solid 4px transparent;
-    transition: all .2s;
-    cursor: pointer;
-
-    &:hover {
-      border-bottom: solid 4px $color-primary;
-    }
-
-    &--active {
-      border-bottom: solid 4px $color-primary;
-    }
   }
 
   &__link {
     &:link,
     &:visited {
+      display: inline-block;
+      padding: 1rem .4rem;
       color: $color-grey-dark;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 600;
+      border-bottom: solid 4px transparent;
+      transition: all .2s;
+
+      &:hover {
+        border-bottom: solid 4px $color-primary;
+      }
+    }
+
+    &--active {
+      border-bottom: solid 4px $color-primary !important;
     }
   }
 
@@ -46,8 +46,15 @@
     display: block;
   }
 
-  &__sub-item {
+  &__sub-link {
+    display: inline-block;
+    width: 100%;
     padding: 1rem 2rem;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
     border-bottom: solid 4px transparent;
     transition: all .2s;
 

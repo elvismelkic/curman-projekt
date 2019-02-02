@@ -1,25 +1,16 @@
+.main-container {
+  padding: 6rem 0;
+  background-image:
+    linear-gradient(
+      rgba($color-white, .96),
+      rgba($color-white, .96)
+    ), url("../img/background-home-bw.jpg");
+  background-size: cover;
+}
+
 .section-home {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-
-  &--about {
-    background-image:
-      linear-gradient(
-        rgba($color-white, .9),
-        rgba($color-white, .9)
-      ), url("../img/background-drawing.jpg");
-    background-size: cover;
-  }
-
-  &--services {
-    background-image:
-      linear-gradient(
-        rgba($color-white, .9),
-        rgba($color-white, .9)
-      ), url("../img/background-structure.jpg");
-    background-size: cover;
-    background-position: center center;
-  }
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .section-about {
@@ -43,6 +34,7 @@
       rgba($color-white, .9)
     ), url("../img/background-handshake.jpg");
   background-size: cover;
+  background-position: center bottom;
 }
 
 .section-contact {
@@ -52,7 +44,7 @@
     linear-gradient(
       rgba($color-white, .9),
       rgba($color-white, .9)
-    ), url("../img/background-contact.jpg");
+    ), url("../img/background-contact-bw.jpg");
   background-size: cover;
   background-position: center center;
 }
