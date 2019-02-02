@@ -15,6 +15,10 @@
     &:hover {
       border-bottom: solid 4px $color-primary;
     }
+
+    &--active {
+      border-bottom: solid 4px $color-primary;
+    }
   }
 
   &__link {
@@ -51,10 +55,11 @@
       background-color: $color-grey-ultralight;
       border-bottom: solid 4px $color-primary;
     }
-  }
 
-  &__active {
-    border-bottom: solid 4px $color-primary;
+    // THINK ABOUT IF YOU'LL USE THIS - CURRENTLY IT'S A "NO"
+    &--active {
+      background-color: $color-grey-ultralight;
+      border-bottom: solid 4px $color-primary;
+    }
   }
-
 }
