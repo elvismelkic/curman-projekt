@@ -79,6 +79,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around;
   align-items: center;
   padding: 3rem 5rem; }
+  .article--home {
+    padding: 7rem 5rem; }
   .article__col-1-of-2 {
     width: 50%;
     padding: 0 2rem; }
@@ -125,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap; }
   .image-container__logo-box {
     width: 19rem;
@@ -228,14 +230,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #efefef;
     border-bottom: solid 4px #0938c2; }
 
-.main-container {
-  padding: 6rem 0;
+.section-home {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)), url("../img/background-home-bw.jpg");
   background-size: cover; }
-
-.section-home {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
 
 .section-about {
   padding-top: 10rem;
@@ -243,6 +242,13 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/background-collaboration-bw.jpg");
   background-size: cover;
   background-position: center center; }
+
+.section-services {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/background-drawing.jpg");
+  background-size: cover;
+  background-position: center bottom; }
 
 .section-clients {
   padding-top: 5rem;
