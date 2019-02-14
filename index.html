@@ -10,7 +10,7 @@
   <title>CURMAN Projekt d.o.o.</title>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__logo-box"><a href="index.html"><img src="./img/logo.bmp" alt="logo" class="header__logo" /></a></div>
     <h1 class="heading">CURMAN Projekt d.o.o.</h1>
     <nav class="nav">
@@ -37,8 +37,8 @@
       <ul class="mobile-nav__list">
         <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Početna</a></li>
         <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">O nama</a></li>
-        <li class="mobile-nav__item">
-          <a href="#" class="mobile-nav__link">Usluge</a>
+        <li id="mobile-services" class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></a>
           <ul class="mobile-nav__sub-list">
             <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
             <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Stručni nadzor</a></li>
@@ -51,20 +51,24 @@
     </nav>
   </header>
   <main>
-    <section class="section-home u-margin-elem-under-header">
-      <article class="article article--narrow">
+    <section class="section-home">
+      <article class="article">
         <div class="article__col-1-of-2">
           <h2 class="article__heading u-margin-bottom-small">Što je <span class="article__heading--blue">CURMAN Projekt d.o.o.</span>?</h2>
           <p class="article__paragraph u-margin-bottom-medium">CURMAN Projekt d.o.o. je tvrtka osnovana 2013. godine. Specijalizirani smo za djelatnost projektiranja objekata visokogradnje te za stručni nadzor nad gradnjom. Svojim iskustvom i znanjem pružamo našim klijentima vrhunsku uslugu.</p>
           <a href="about.html" class="btn btn--blue">O nama</a>
         </div>
         <div class="article__col-1-of-2 u-text-align-right">
-          <img src="./img/what-is-cp.jpg" alt="Image" class="article__image" />
+          <div class="article__image-container">
+            <img src="./img/what-is-cp.jpg" alt="Image" class="article__image" />
+          </div>
         </div>
       </article>
-      <article class="article article--narrow">
+      <article class="article">
         <div class="article__col-1-of-2">
-          <img src="./img/house-plans.jpg" alt="Image" class="article__image" />
+          <div class="article__image-container">
+            <img src="./img/house-plans.jpg" alt="Image" class="article__image" />
+          </div>
         </div>
         <div class="article__col-1-of-2">
           <h2 class="article__heading u-margin-bottom-small">Što možemo učiniti za <span class="article__heading--blue">Vas</span>?</h2>
@@ -72,19 +76,23 @@
           <a href="services.html" class="btn btn--blue">Usluge</a>
         </div>
       </article>
-      <article class="article article--narrow">
+      <article class="article">
         <div class="article__col-1-of-2">
           <h2 class="article__heading u-margin-bottom-small">Tko su naši <span class="article__heading--blue">klijenti</span>?</h2>
           <p class="article__paragraph u-margin-bottom-medium">Dosad smo imali prilike surađivati s najvećim hrvatskim tvrtkama, te za njih izrađivati iznimno složene projekte, kao što su hale industrijskih postrojenja, čelične platforme, dimnjaci i sl. Uz to, izrađujemo i projekte manjih složenosti, kao što su obiteljske kuće, garaže i sl. Mnogi su nam ukazali svoje povjerenje, a zadovoljstvo naših klijenata često rezultira i dugotrajnom suradnjom.</p>
           <a href="clients.html" class="btn btn--blue">Naši klijenti</a>
         </div>
         <div class="article__col-1-of-2 u-text-align-right">
-          <img src="./img/background-handshake.jpg" alt="Image" class="article__image" />
+          <div class="article__image-container">
+            <img src="./img/background-handshake.jpg" alt="Image" class="article__image" />
+          </div>
         </div>
       </article>
-      <article class="article article--narrow">
+      <article class="article">
         <div class="article__col-1-of-2">
-          <img src="./img/phone.jpg" alt="Image" class="article__image" />
+          <div class="article__image-container">
+            <img src="./img/phone.jpg" alt="Image" class="article__image" />
+          </div>
         </div>
         <div class="article__col-1-of-2">
           <h2 class="article__heading u-margin-bottom-small">Zainteresirani ste za naše <span class="article__heading--blue">usluge</span>?</h2>
@@ -98,5 +106,7 @@
     <div class="footer__section">&copy; Copyright 2019 CURMAN Projekt d.o.o.</div>
     <div class="footer__section">Izradio Elvis Melkić</div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

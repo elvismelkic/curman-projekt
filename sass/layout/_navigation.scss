@@ -1,4 +1,12 @@
 .nav {
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     margin: 0 2rem;
@@ -34,13 +42,14 @@
 
   &__sub-list {
     position: absolute;
-    top: 5.1rem;
+    top: 5.2rem;
     left: 0;
     width: 25rem;
     background-color: $color-white;
     box-shadow: 0 .6rem 1.2rem rgba($color-black, .2);
     visibility: hidden;
     opacity: 0;
+    transition: all .2s;
   }
 
   &__item:hover &__sub-list {
@@ -63,33 +72,37 @@
       transition: all .2s;
 
       &:hover {
-        background-color: $color-grey-ultralight;
+        background-color: $color-grey-lightest;
         border-bottom: solid 4px $color-primary;
       }
-    }
-
-    // THINK ABOUT IF YOU'LL USE THIS - CURRENTLY IT'S A "NO"
-    &--active {
-      background-color: $color-grey-ultralight;
-      border-bottom: solid 4px $color-primary;
     }
   }
 }
 
 .mobile-nav {
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  @include respond(phone) {
+    display: block;
+  }
+
   &__checkbox {
     display: none;
   }
 
   &__button {
-    display: none;
-    background-color: $color-grey-ultradark;
+    display: block;
+    background-color: $color-primary-darkest;
     height: 7rem;
     width: 7rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
@@ -104,11 +117,10 @@
     left: -30rem;
     top: 0;
     background-color: $color-metalic;
-    transition: all .2s;
+    transition: all .4s;
   }
 
   &__item {
-    display: block;
     padding: 0 1.6rem;
     position: relative;
     border-bottom: 1px solid $color-grey-dark;
@@ -117,7 +129,7 @@
   &__link {
     &:link,
     &:visited {
-      display: inline-block;
+      display: block;
       padding: 1rem .4rem;
       color: $color-white;
       text-transform: uppercase;
@@ -131,10 +143,10 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
   }
 
-  &__item:hover &__sub-list {
+  &__sub-list--visible {
     height: 12.42rem;
     visibility: visible;
     opacity: 1;
@@ -150,7 +162,7 @@
   &__sub-link {
     &:link,
     &:visited {
-      display: inline-block;
+      display: block;
       padding: 1rem .4rem;
       color: $color-white;
       text-transform: uppercase;
@@ -159,8 +171,67 @@
     }
   }
 
+  &__down-caret {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: $color-white transparent transparent transparent;
+    display: inline-block;
+    margin-left: 6px;
+    top: -3px;
+    position: relative;
+    transform: rotate(-90deg);
+    transition: all .25s ease-in;
+  }
+  
+  &__open-caret {
+    transform: rotate(0deg);
+    transition: all .25s ease-out;
+  }
+
   // FUNCTIONALITY
   &__checkbox:checked ~ &__list {
     left: 0;
+  }
+
+  // ICON
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .3s;
+    }
+
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }

@@ -6,4 +6,8 @@
   color: $color-white;
   background-color: $color-primary-dark;
   padding: 3rem 7rem;
+
+  @include respond(phone) {
+    padding: 1rem 4rem;
+  }
 }
