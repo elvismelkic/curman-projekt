@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/png" href="./img/logo-icon.png">
+  <link rel="shortcut icon" type="image/png" href="./img/tab-logo.png">
   <title>CURMAN Projekt d.o.o.</title>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__logo-box"><a href="index.html"><img src="./img/logo.bmp" alt="logo" class="header__logo" /></a></div>
     <h1 class="heading">CURMAN Projekt d.o.o.</h1>
     <nav class="nav">
@@ -20,20 +20,40 @@
         <li class="nav__item">
           <a href="services.html" class="nav__link">Usluge</a>
           <ul class="nav__sub-list">
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">Projektiranje i statički proračun</a></li>
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">Stručni nadzor</a></li>
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">BIM <span class="u-font-size-large">/</span> Radionička dokumentacija</a></li>
+            <li class="nav__sub-item"><a href="services.html#calculation" class="nav__sub-link">Projektiranje i statički proračun</a></li>
+            <li class="nav__sub-item"><a href="services.html#supervision" class="nav__sub-link">Stručni nadzor</a></li>
+            <li class="nav__sub-item"><a href="services.html#bim" class="nav__sub-link">BIM <span class="u-font-size-large">/</span> Radionička dokumentacija</a></li>
           </ul>
         </li>
         <li class="nav__item"><a href="clients.html" class="nav__link nav__link--active">Naši klijenti</a></li>
         <li class="nav__item"><a href="contact.html" class="nav__link">Kontakt</a></li>
       </ul>
     </nav>
+    <nav class="mobile-nav">
+      <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="mobile-nav__button">
+        <span class="mobile-nav__icon">&nbsp;</span>
+      </label>
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Početna</a></li>
+        <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">O nama</a></li>
+        <li id="mobile-services" class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></a>
+          <ul class="mobile-nav__sub-list">
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Stručni nadzor</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">BIM / Radionička dokumentacija</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item"><a href="clients.html" class="mobile-nav__link">Naši klijenti</a></li>
+        <li class="mobile-nav__item"><a href="contact.html" class="mobile-nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="section-clients">
       <article class="article">
-        <div class="article__col-1-of-1 u-text-align-center">
+        <div class="article__col-1-of-1 article__col-1-of-1--wide u-text-align-center">
           <h2 class="article__heading u-margin-bottom-medium">Neki od naših <span class="article__heading--blue">klijenata</span></h2>
           <div class="image-container">
             <div class="image-container__logo-box">
@@ -72,5 +92,6 @@
     <div class="footer__section">&copy; Copyright 2019 CURMAN Projekt d.o.o.</div>
     <div class="footer__section">Izradio Elvis Melkić</div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

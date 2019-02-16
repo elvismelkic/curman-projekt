@@ -96,15 +96,13 @@
 
   &__button {
     display: block;
-    background-color: $color-primary-darkest;
-    height: 7rem;
-    width: 7rem;
+    background-color: $color-white;
+    height: 9rem;
+    width: 9rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
-    border-radius: .5rem;
+    top: 0;
+    right: 0;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
     cursor: pointer;
   }
@@ -121,20 +119,25 @@
   }
 
   &__item {
-    padding: 0 1.6rem;
     position: relative;
     border-bottom: 1px solid $color-grey-dark;
+
+    &--header {
+      height: 9.1rem;
+    }
   }
 
   &__link {
     &:link,
     &:visited {
       display: block;
-      padding: 1rem .4rem;
-      color: $color-white;
+      padding: 2rem 3rem;
+      color: $color-grey-lightest;
       text-transform: uppercase;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
   }
 
@@ -147,15 +150,13 @@
   }
 
   &__sub-list--visible {
-    height: 12.42rem;
+    height: 25.3rem;
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }
 
   &__sub-item {
-    display: block;
-    padding: 0 1rem;
     border-top: 1px solid $color-grey-dark;
   }
 
@@ -163,11 +164,13 @@
     &:link,
     &:visited {
       display: block;
-      padding: 1rem .4rem;
-      color: $color-white;
+      padding: 2rem 3rem;
+      color: $color-grey-lightest;
       text-transform: uppercase;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
   }
 
@@ -176,10 +179,10 @@
     height: 0;
     border-style: solid;
     border-width: 5px 4px 0 4px;
-    border-color: $color-white transparent transparent transparent;
+    border-color: $color-grey-lightest transparent transparent transparent;
     display: inline-block;
     margin-left: 6px;
-    top: -3px;
+    top: -2px;
     position: relative;
     transform: rotate(-90deg);
     transition: all .25s ease-in;
@@ -198,14 +201,14 @@
   // ICON
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
 
     &,
     &::before,
     &::after {
       width: 3rem;
-      height: 2px;
-      background-color: $color-white;
+      height: 3px;
+      background-color: $color-primary;
       display: inline-block;
     }
 
@@ -217,8 +220,8 @@
       transition: all .3s;
     }
 
-    &::before { top: -.8rem; }
-    &::after { top: .8rem; }
+    &::before { top: -1rem; }
+    &::after { top: 1rem; }
   }
 
   &__checkbox:checked + &__button &__icon {

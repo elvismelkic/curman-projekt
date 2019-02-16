@@ -1,9 +1,19 @@
 .map {
   height: 0;
+  max-width: 60rem;
+  min-height: 30rem;
   padding-bottom: 80%;
   position: relative;
   border: 1px solid $color-primary;
   overflow: hidden;
+
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
+
+  @include respond(phone-nar) {
+    margin-top: 2rem;
+  }
 
   &__iframe {
     height: 100%;

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/png" href="./img/logo-icon.png">
+  <link rel="shortcut icon" type="image/png" href="./img/tab-logo.png">
   <title>CURMAN Projekt d.o.o.</title>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__logo-box"><a href="index.html"><img src="./img/logo.bmp" alt="logo" class="header__logo" /></a></div>
     <h1 class="heading">CURMAN Projekt d.o.o.</h1>
     <nav class="nav">
@@ -20,13 +20,33 @@
         <li class="nav__item">
           <a href="services.html" class="nav__link nav__link--active">Usluge</a>
           <ul class="nav__sub-list">
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">Projektiranje i statički proračun</a></li>
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">Stručni nadzor</a></li>
-            <li class="nav__sub-item"><a href="services.html" class="nav__sub-link">BIM <span class="u-font-size-large">/</span> Radionička dokumentacija</a></li>
+            <li class="nav__sub-item"><a href="services.html#calculation" class="nav__sub-link">Projektiranje i statički proračun</a></li>
+            <li class="nav__sub-item"><a href="services.html#supervision" class="nav__sub-link">Stručni nadzor</a></li>
+            <li class="nav__sub-item"><a href="services.html#bim" class="nav__sub-link">BIM <span class="u-font-size-large">/</span> Radionička dokumentacija</a></li>
           </ul>
         </li>
         <li class="nav__item"><a href="clients.html" class="nav__link">Naši klijenti</a></li>
         <li class="nav__item"><a href="contact.html" class="nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="mobile-nav__button">
+        <span class="mobile-nav__icon">&nbsp;</span>
+      </label>
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Početna</a></li>
+        <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">O nama</a></li>
+        <li id="mobile-services" class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></a>
+          <ul class="mobile-nav__sub-list">
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Stručni nadzor</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">BIM / Radionička dokumentacija</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item"><a href="clients.html" class="mobile-nav__link">Naši klijenti</a></li>
+        <li class="mobile-nav__item"><a href="contact.html" class="mobile-nav__link">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -34,18 +54,13 @@
     <section class="section-services">
       <article class="article">
         <div class="article__col-1-of-1">
-          <h2 class="article__heading article__heading--blue u-margin-bottom-small">Projektiranje i statički proračun</h2>
+          <h2 id="calculation" class="article__heading article__heading--blue u-margin-bottom-small">Projektiranje i statički proračun</h2>
           <p class="article__paragraph u-margin-bottom-big">Za Vas nudimo usluge projektiranja i izrade statičkih proračuna, odnosno proračuna mehaničke otpornosti i stabilnosti konstrukcije. Izrađujemo građevinske projekte i statičke proračune za različite objekte - obiteljske kuće, skladišne hale i hale raznih postrojenja, razne industrijske objekte (tornjevi, dimnjaci, cijevni mostovi...) i mnoge druge.</p>
-          <h2 class="article__heading article__heading--blue u-margin-bottom-small">Stručni građevinski nadzor</h2>
+          <h2 id="supervision" class="article__heading article__heading--blue u-margin-bottom-small">Stručni građevinski nadzor</h2>
           <p class="article__paragraph u-margin-bottom-big">Jedan od sudionika u gradnji, uz investitora, projektanata i izvođača, je i stručni nadzor. Za Vas nudimo usluge građevinskog stručnog nadzora, gdje profesionalno i savjesno osiguravamo vršenje gradnje prema projektu. Također, sudjelujemo u rješavanju nepredviđenih situacija nastalih tijekom gradnje, a koje nisu bile predvidljive u fazi projektiranja.</p>
-          <h2 class="article__heading article__heading--blue u-margin-bottom-small">BIM <span class="u-font-size-ultralarge">/</span> radionička dokumentacija</h2>
+          <h2 id="bim" class="article__heading article__heading--blue u-margin-bottom-small">BIM <span class="u-font-size-ultralarge">/</span> radionička dokumentacija</h2>
           <p class="article__paragraph u-margin-bottom-small">BIM (Building information modeling) sustav je najnapredniji koncept u projektiranju koji građevina danas poznaje. Osnova BIM sustava je 3D model objekta koji osim vizualne reprezentacije  u sebi sadrži i mnoge druge informacije kao što su npr. količine materijala i elemenata, svojstva elementa (masa, čvrstoća, površina...), detalji elemenata i mnoge druge informacije potrebne za izradu projektne dokumentacije i izvedbu samog objekta.</p>
           <p class="article__paragraph u-margin-bottom-big">Koristeći BIM sustav za izradu radioničke dokumentacije čeličnih konstrukcija, u mogućnosti smo klijentima pružiti najvišu razinu kvalitete i preciznosti, čime uvelike olakšavamo cijeli proces izrade i montaže same konstrukcije.</p>
-          <!-- <div class="image-container">
-            <img src="./img/peletirnica-hala.jpg" alt="Peletirnice" class="image-container__image image-container__image--img1" />
-            <img src="./img/petrokemija.jpg" alt="Petrkoemija Kutina" class="image-container__image image-container__image--img2" />
-            <img src="./img/petrokemija-zoom.jpg" alt="Detalj Petrokemije Kutina" class="image-container__image image-container__image--img3" />
-          </div> -->
         </div>
       </article>
     </section>
@@ -54,5 +69,6 @@
     <div class="footer__section">&copy; Copyright 2019 CURMAN Projekt d.o.o.</div>
     <div class="footer__section">Izradio Elvis Melkić</div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

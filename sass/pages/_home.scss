@@ -7,6 +7,10 @@
       rgba($color-white, .96)
     ), url("../img/background-home-bw.jpg");
   background-size: cover;
+
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
 }
 
 .section-about {
@@ -19,6 +23,10 @@
     ), url("../img/background-collaboration-bw.jpg");
   background-size: cover;
   background-position: center center;
+
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
 }
 
 .section-services {
@@ -31,6 +39,10 @@
     ), url("../img/background-drawing.jpg");
   background-size: cover;
   background-position: center bottom;
+
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
 }
 
 .section-clients {
@@ -43,6 +55,10 @@
     ), url("../img/background-handshake.jpg");
   background-size: cover;
   background-position: center bottom;
+
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
 }
 
 .section-contact {
@@ -55,4 +71,8 @@
     ), url("../img/background-contact-bw.jpg");
   background-size: cover;
   background-position: center center;
+
+  @include respond(tab-port) {
+    padding-top: 14rem;
+  }
 }

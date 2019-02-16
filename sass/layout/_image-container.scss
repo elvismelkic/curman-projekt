@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   &__logo-box {
@@ -12,10 +12,21 @@
     display: flex;
     justify-content: center;
     background-color: $color-white;
+
+    @include respond(tab-port) {
+      width: 15rem;
+      height: 12rem;
+    }
+
+    @include respond(phone-nar) {
+      width: 12rem;
+      height: 9.6rem;
+      margin: 2rem;
+    }
   }
 
   &__logo {
-    width: 15rem;
+    width: 80%;
     align-self: center;
   }
 }

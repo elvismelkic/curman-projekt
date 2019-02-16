@@ -11,9 +11,20 @@
   z-index: 9999;
   box-shadow: 1px 5px 10px rgba($color-black, .25);
 
+  @include respond(tab-port) {
+    padding: 0 12rem;
+    justify-content: center;
+  }
+
   &__logo-box {
     height: 100%;
     padding: 1rem 4rem;
+
+    @include respond(tab-port) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__logo {

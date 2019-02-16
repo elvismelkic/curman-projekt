@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
   font-size: 3rem;
+  text-align: center;
   color: $color-primary;
-  transition: all .5s;
 
-  @include respond(phone) {
-    font-size: 2.5rem;
-  }
+  @include respond(phone-nar) {
+    font-size: 2.4rem;
+  };
 }
