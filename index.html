@@ -35,15 +35,14 @@
         <span class="mobile-nav__icon">&nbsp;</span>
       </label>
       <ul class="mobile-nav__list">
-        <li class="mobile-nav__item mobile-nav__item--header"><a href="index.html" class="mobile-nav__link">&nbsp;</a></li>
         <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Početna</a></li>
         <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">O nama</a></li>
         <li id="mobile-services" class="mobile-nav__item">
-          <a href="#" class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></a>
+          <span class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></span>
           <ul class="mobile-nav__sub-list">
-            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
-            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">Stručni nadzor</a></li>
-            <li class="mobile-nav__sub-item"><a href="services.html" class="mobile-nav__sub-link">BIM / Radionička dokumentacija</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html#calculation" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html#supervision" class="mobile-nav__sub-link">Stručni nadzor</a></li>
+            <li class="mobile-nav__sub-item"><a href="services.html#bim" class="mobile-nav__sub-link">BIM / Radionička dokumentacija</a></li>
           </ul>
         </li>
         <li class="mobile-nav__item"><a href="clients.html" class="mobile-nav__link">Naši klijenti</a></li>
@@ -104,8 +103,25 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__section">&copy; Copyright 2019 CURMAN Projekt d.o.o.</div>
-    <div class="footer__section">Izradio Elvis Melkić</div>
+    <div class="footer__section footer__section--grey">
+      <div>
+        <p class="footer__paragraph u-font-weight-heavy u-margin-bottom-ultrasmall">CURMAN Projekt d.o.o.</p>
+        <p class="footer__paragraph u-margin-bottom-ultrasmall">Ozaljska 148, 10 000 Zagreb, Hrvatska</p>
+        <p class="footer__paragraph u-margin-bottom-ultrasmall">+385 98 663 118</p>
+        <p class="footer__paragraph u-margin-bottom-ultrasmall">branimir.curman@gmail.com</p>
+      </div>
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Početna</a></li>
+        <li class="footer__nav-item"><a href="about.html" class="footer__nav-link">O nama</a></li>
+        <li class="footer__nav-item"><a href="services.html" class="footer__nav-link">Usluge</a></li>
+        <li class="footer__nav-item"><a href="clients.html" class="footer__nav-link">Naši klijenti</a></li>
+        <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer__section footer__section--blue">
+      <p class="footer__paragraph footer__paragraph--copyright">Copyright &copy; 2019 CURMAN Projekt d.o.o. Sva prava pridržana.</p>
+      <p class="footer__paragraph footer__paragraph--copyright">Izradio Elvis Melkić</p>
+    </div>
   </footer>
   <script src="./js/script.js"></script>
 </body>
