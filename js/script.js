@@ -37,7 +37,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     mobileNavServices.addEventListener("click", function(event) {
         mobileNavServices.children[0].children[0].classList.toggle("mobile-nav__open-caret");
         mobileNavServices.children[1].classList.toggle("mobile-nav__sub-list--visible");
-
-        //event.preventDefault();
     });
 });

@@ -1,2 +1,3 @@
 # curman-projekt
-website for my first employer
+
+A website for my first employer.
