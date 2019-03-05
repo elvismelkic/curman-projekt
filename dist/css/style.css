@@ -428,8 +428,11 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2000;
     text-align: center;
     cursor: pointer; }
-    .mobile-nav__button, .mobile-nav__button:focus, .mobile-nav__button:active {
-      border: none; }
+    .mobile-nav__button, .mobile-nav__button:active {
+      border: none;
+      outline: none; }
+    .mobile-nav__button:focus {
+      outline: 0; }
   .mobile-nav__list {
     display: block;
     width: 30rem;

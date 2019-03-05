@@ -111,9 +111,13 @@
     cursor: pointer;
 
     &,
-    &:focus,
     &:active {
       border: none;
+      outline: none;
+    }
+
+    &:focus {
+      outline: 0;
     }
   }
 
