@@ -21,14 +21,14 @@
     &:link,
     &:visited {
       display: inline-block;
-      padding: 1rem .4rem;
+      padding: 1rem 0.4rem;
       color: $color-grey-dark;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 600;
       border-bottom: solid 4px transparent;
-      transition: all .2s;
+      transition: all 0.2s;
 
       &:hover {
         border-bottom: solid 4px $color-primary;
@@ -50,10 +50,10 @@
     left: 0;
     width: 25rem;
     background-color: $color-white;
-    box-shadow: 0 .6rem 1.2rem rgba($color-black, .2);
+    box-shadow: 0 0.6rem 1.2rem rgba($color-black, 0.2);
     visibility: hidden;
     opacity: 0;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__item:hover &__sub-list {
@@ -73,7 +73,7 @@
       font-size: 1.6rem;
       font-weight: 600;
       border-bottom: solid 4px transparent;
-      transition: all .2s;
+      transition: all 0.2s;
 
       &:hover {
         background-color: $color-grey-lightest;
@@ -100,6 +100,7 @@
 
   &__button {
     display: block;
+    border: none;
     background-color: $color-white;
     height: 9rem;
     width: 9rem;
@@ -119,7 +120,11 @@
     left: -30rem;
     top: 0;
     background-color: $color-metalic;
-    transition: all .4s;
+    transition: all 0.4s;
+
+    &--show {
+      left: 0;
+    }
   }
 
   &__item {
@@ -152,7 +157,7 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
   }
 
   &__sub-list--visible {
@@ -191,23 +196,18 @@
     top: -2px;
     position: relative;
     transform: rotate(-90deg);
-    transition: all .25s ease-in;
-  }
-  
-  &__open-caret {
-    transform: rotate(0deg);
-    transition: all .25s ease-out;
+    transition: all 0.25s ease-in;
   }
 
-  // FUNCTIONALITY
-  &__checkbox:checked ~ &__list {
-    left: 0;
+  &__open-caret {
+    transform: rotate(0deg);
+    transition: all 0.25s ease-out;
   }
 
   // ICON
   &__icon {
     position: relative;
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
 
     &,
     &::before,
@@ -223,24 +223,28 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
-    &::before { top: -1rem; }
-    &::after { top: 1rem; }
-  }
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+    }
 
-  &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
-  }
+    &--clicked {
+      background-color: transparent;
+    }
 
-  &__checkbox:checked + &__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
+    &--clicked::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
 
-  &__checkbox:checked + &__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
+    &--clicked::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
   }
 }

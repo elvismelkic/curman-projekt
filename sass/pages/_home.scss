@@ -53,6 +53,11 @@
   @include respond(tab-port) {
     padding-top: 14rem;
   }
+
+  @include respond(phone-nar) {
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .section-clients {
