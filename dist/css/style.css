@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .u-margin-bottom-big {
   margin-bottom: 7rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 4rem !important; } }
 
 .u-margin-top-small {
   margin-top: 1.5rem !important; }
@@ -129,6 +132,9 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 50em) {
     .article {
       padding: 4rem 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .article {
+      padding: 3rem 1rem; } }
   .article--narrow {
     padding: 7rem 15rem; }
     @media only screen and (max-width: 62.5em) {
@@ -137,12 +143,18 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (max-width: 50em) {
       .article--narrow {
         padding: 4rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .article--narrow {
+        padding: 3rem 1rem; } }
   .article__col-1-of-2 {
     width: 50%;
     padding: 0 7rem; }
     @media only screen and (max-width: 62.5em) {
       .article__col-1-of-2 {
         width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .article__col-1-of-2 {
+        padding: 0 3rem; } }
   .article__col-1-of-1 {
     width: 90%;
     padding: 0 14rem; }
@@ -150,6 +162,9 @@ h1, h2, h3, h4, h5, h6 {
       .article__col-1-of-1 {
         width: 100%;
         padding: 0 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .article__col-1-of-1 {
+        padding: 0 3rem; } }
     .article__col-1-of-1--wide {
       padding: 0rem 8rem; }
       @media only screen and (max-width: 62.5em) {
@@ -253,7 +268,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding: 3rem 7rem; }
+    padding: 2rem 7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__section {
+        padding: 2rem 4rem 1rem; } }
     .footer__section--grey {
       justify-content: space-around;
       align-items: center;
@@ -267,10 +285,12 @@ h1, h2, h3, h4, h5, h6 {
       @media only screen and (max-width: 50em) {
         .footer__section--blue {
           display: block; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__section--blue {
+          padding: 1rem 4rem; } }
   .footer__paragraph {
     font-size: 1.4rem;
     color: #eee;
-    text-align: justify;
     padding-right: 4rem; }
     .footer__paragraph--copyright {
       padding: 0 2rem; }
@@ -283,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
           .footer__paragraph--copyright:not(:last-child) {
             border-right: none; } }
   .footer__nav-item {
-    padding: .4rem 0; }
+    padding: 0.4rem 0; }
   .footer__nav-link:link, .footer__nav-link:visited {
     display: inline-block;
     color: #eee;
@@ -291,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 600;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .footer__nav-link:link:hover, .footer__nav-link:visited:hover {
       color: #1375ff; }
 
@@ -505,6 +525,10 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 62.5em) {
     .section-home {
       padding-top: 14rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-home {
+      padding-top: 11rem;
+      padding-bottom: 4rem; } }
 
 .section-about {
   padding-top: 16rem;
@@ -515,6 +539,10 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 62.5em) {
     .section-about {
       padding-top: 14rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      padding-top: 11rem;
+      padding-bottom: 1rem; } }
 
 .section-services {
   padding-top: 16rem;
@@ -535,6 +563,10 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 62.5em) {
     .section-clients {
       padding-top: 14rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-clients {
+      padding-top: 11rem;
+      padding-bottom: 1rem; } }
 
 .section-contact {
   padding-top: 16rem;
@@ -545,3 +577,7 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (max-width: 62.5em) {
     .section-contact {
       padding-top: 14rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-contact {
+      padding-top: 11rem;
+      padding-bottom: 1rem; } }

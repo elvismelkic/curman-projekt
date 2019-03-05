@@ -12,6 +12,10 @@
 
 .u-margin-bottom-big {
   margin-bottom: 7rem !important;
+
+  @include respond(phone-nar) {
+    margin-bottom: 4rem !important;
+  }
 }
 
 .u-margin-top-small {

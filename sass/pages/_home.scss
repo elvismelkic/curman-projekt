@@ -1,42 +1,52 @@
 .section-home {
   padding-top: 16rem;
   padding-bottom: 10rem;
-  background-image:
-    linear-gradient(
-      rgba($color-white, .96),
-      rgba($color-white, .96)
-    ), url("../img/background-home-bw.jpg");
+  background-image: linear-gradient(
+      rgba($color-white, 0.96),
+      rgba($color-white, 0.96)
+    ),
+    url("../img/background-home-bw.jpg");
   background-size: cover;
 
   @include respond(tab-port) {
     padding-top: 14rem;
+  }
+
+  @include respond(phone-nar) {
+    padding-top: 11rem;
+    padding-bottom: 4rem;
   }
 }
 
 .section-about {
   padding-top: 16rem;
   padding-bottom: 3rem;
-  background-image:
-    linear-gradient(
-      rgba($color-white, .9),
-      rgba($color-white, .9)
-    ), url("../img/background-collaboration-bw.jpg");
+  background-image: linear-gradient(
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url("../img/background-collaboration-bw.jpg");
   background-size: cover;
   background-position: center center;
 
   @include respond(tab-port) {
     padding-top: 14rem;
   }
+
+  @include respond(phone-nar) {
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .section-services {
   padding-top: 16rem;
   padding-bottom: 3rem;
-  background-image:
-    linear-gradient(
-      rgba($color-white, .9),
-      rgba($color-white, .9)
-    ), url("../img/background-drawing.jpg");
+  background-image: linear-gradient(
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url("../img/background-drawing.jpg");
   background-size: cover;
   background-position: center bottom;
 
@@ -48,31 +58,41 @@
 .section-clients {
   padding-top: 16rem;
   padding-bottom: 5rem;
-  background-image:
-    linear-gradient(
-      rgba($color-white, .9),
-      rgba($color-white, .9)
-    ), url("../img/background-handshake.jpg");
+  background-image: linear-gradient(
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url("../img/background-handshake.jpg");
   background-size: cover;
   background-position: center bottom;
 
   @include respond(tab-port) {
     padding-top: 14rem;
   }
+
+  @include respond(phone-nar) {
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .section-contact {
   padding-top: 16rem;
   padding-bottom: 5rem;
-  background-image:
-    linear-gradient(
-      rgba($color-white, .9),
-      rgba($color-white, .9)
-    ), url("../img/background-contact-bw.jpg");
+  background-image: linear-gradient(
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url("../img/background-contact-bw.jpg");
   background-size: cover;
   background-position: center center;
 
   @include respond(tab-port) {
     padding-top: 14rem;
+  }
+
+  @include respond(phone-nar) {
+    padding-top: 11rem;
+    padding-bottom: 1rem;
   }
 }

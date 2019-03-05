@@ -22,20 +22,33 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    var subList = document.querySelector(".nav__sub-list");
+  let subList = document.querySelector(".nav__sub-list");
+  let checkbox = document.getElementById("navi-toggle");
 
-    subList.addEventListener("mouseover", function(event) {
-        subList.previousElementSibling.classList.toggle("nav__link--sibling-hover");
-    });
+  checkbox.checked = false;
 
-    subList.addEventListener("mouseout", function(event) {
-        subList.previousElementSibling.classList.toggle("nav__link--sibling-hover");
-    });
+  subList.addEventListener("mouseover", function(event) {
+    subList.previousElementSibling.classList.toggle("nav__link--sibling-hover");
+  });
 
-    var mobileNavServices = document.getElementById("mobile-services");
+  subList.addEventListener("mouseout", function(event) {
+    subList.previousElementSibling.classList.toggle("nav__link--sibling-hover");
+  });
 
-    mobileNavServices.addEventListener("click", function(event) {
-        mobileNavServices.children[0].children[0].classList.toggle("mobile-nav__open-caret");
-        mobileNavServices.children[1].classList.toggle("mobile-nav__sub-list--visible");
-    });
+  let mobileNavServices = document.getElementById("mobile-services");
+
+  mobileNavServices.addEventListener("click", function(event) {
+    mobileNavServices.children[0].children[0].classList.toggle(
+      "mobile-nav__open-caret"
+    );
+    mobileNavServices.children[1].classList.toggle(
+      "mobile-nav__sub-list--visible"
+    );
+  });
+
+  let mobileSubList = document.querySelector(".mobile-nav__sub-list");
+
+  mobileSubList.addEventListener("click", function(event) {
+    checkbox.checked = false;
+  });
 });

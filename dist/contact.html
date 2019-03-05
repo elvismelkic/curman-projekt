@@ -1,97 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="CURMAN Projekt d.o.o. je građevinska tvrtka za projektiranje i stručni nadzor.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="CURMAN Projekt d.o.o. je građevinska tvrtka za projektiranje i stručni nadzor."
+    />
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/png" href="./img/tab-logo.png">
-  <title>CURMAN Projekt d.o.o.</title>
-</head>
-<body>
-  <header id="header" class="header">
-    <div class="header__logo-box"><a href="index.html"><img src="./img/logo.bmp" alt="logo" class="header__logo" /></a></div>
-    <h1 class="heading">CURMAN Projekt d.o.o.</h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Početna</a></li>
-        <li class="nav__item"><a href="about.html" class="nav__link">O nama</a></li>
-        <li class="nav__item">
-          <a href="services.html" class="nav__link">Usluge</a>
-          <ul class="nav__sub-list">
-            <li class="nav__sub-item"><a href="services.html#calculation" class="nav__sub-link">Projektiranje i statički proračun</a></li>
-            <li class="nav__sub-item"><a href="services.html#supervision" class="nav__sub-link">Stručni nadzor</a></li>
-            <li class="nav__sub-item"><a href="services.html#bim" class="nav__sub-link">BIM <span class="u-font-size-large">/</span> Radionička dokumentacija</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a href="clients.html" class="nav__link">Naši klijenti</a></li>
-        <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active">Kontakt</a></li>
-      </ul>
-    </nav>
-    <nav class="mobile-nav">
-      <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="mobile-nav__button">
-        <span class="mobile-nav__icon">&nbsp;</span>
-      </label>
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Početna</a></li>
-        <li class="mobile-nav__item"><a href="about.html" class="mobile-nav__link">O nama</a></li>
-        <li id="mobile-services" class="mobile-nav__item">
-          <span class="mobile-nav__link">Usluge<span class="mobile-nav__down-caret"></span></span>
-          <ul class="mobile-nav__sub-list">
-            <li class="mobile-nav__sub-item"><a href="services.html#calculation" class="mobile-nav__sub-link">Projektiranje i statički proračun</a></li>
-            <li class="mobile-nav__sub-item"><a href="services.html#supervision" class="mobile-nav__sub-link">Stručni nadzor</a></li>
-            <li class="mobile-nav__sub-item"><a href="services.html#bim" class="mobile-nav__sub-link">BIM / Radionička dokumentacija</a></li>
-          </ul>
-        </li>
-        <li class="mobile-nav__item"><a href="clients.html" class="mobile-nav__link">Naši klijenti</a></li>
-        <li class="mobile-nav__item"><a href="contact.html" class="mobile-nav__link">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="section-contact">
-      <article class="article article--narrow">
-        <div class="article__col-1-of-2">
-          <h2 class="article__heading u-margin-bottom-small">Kontaktirajte <span class="article__heading--blue">nas</span></h2>
-          <p class="article__paragraph article__paragraph--dark u-font-weight-heavy u-margin-bottom-ultrasmall">CURMAN Projekt d.o.o.</p>
-          <p class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall"><span class="u-font-weight-heavy">OIB:</span> 19072426286</p>
-          <p class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall"><span class="u-font-weight-heavy">IBAN:</span> xxx</p>
-          <p class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall"><span class="u-font-weight-heavy">Adresa:</span> Ozaljska 148, 10 000 Zagreb, Hrvatska</p>
-          <p class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall"><span class="u-font-weight-heavy">Mob:</span> +385 98 663 118</p>
-          <p class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall"><span class="u-font-weight-heavy">E-mail:</span> branimir.curman@gmail.com</p>
-        </div>
-        <div class="article__col-1-of-2">
-          <div class="map">
-            <iframe class="map__iframe" src="https://maps.google.com/maps?q=ozaljska%20148%20zagreb&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__section footer__section--grey">
-      <div>
-        <p class="footer__paragraph u-font-weight-heavy u-margin-bottom-ultrasmall">CURMAN Projekt d.o.o.</p>
-        <p class="footer__paragraph u-margin-bottom-ultrasmall">Ozaljska 148, 10 000 Zagreb, Hrvatska</p>
-        <p class="footer__paragraph u-margin-bottom-ultrasmall">+385 98 663 118</p>
-        <p class="footer__paragraph u-margin-bottom-ultrasmall">branimir.curman@gmail.com</p>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/tab-logo.png" />
+    <title>CURMAN Projekt d.o.o.</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__logo-box">
+        <a href="index.html"
+          ><img src="./img/logo.bmp" alt="logo" class="header__logo"
+        /></a>
       </div>
-      <ul class="footer__nav">
-        <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Početna</a></li>
-        <li class="footer__nav-item"><a href="about.html" class="footer__nav-link">O nama</a></li>
-        <li class="footer__nav-item"><a href="services.html" class="footer__nav-link">Usluge</a></li>
-        <li class="footer__nav-item"><a href="clients.html" class="footer__nav-link">Naši klijenti</a></li>
-        <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Kontakt</a></li>
-      </ul>
-    </div>
-    <div class="footer__section footer__section--blue">
-      <p class="footer__paragraph footer__paragraph--copyright">Copyright &copy; 2019 CURMAN Projekt d.o.o. Sva prava pridržana.</p>
-      <p class="footer__paragraph footer__paragraph--copyright">Izradio Elvis Melkić</p>
-    </div>
-  </footer>
-  <script src="./js/script.js"></script>
-</body>
+      <h1 class="heading">CURMAN Projekt d.o.o.</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Početna</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">O nama</a>
+          </li>
+          <li class="nav__item">
+            <a href="services.html" class="nav__link">Usluge</a>
+            <ul class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="services.html#calculation" class="nav__sub-link"
+                  >Projektiranje i statički proračun</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="services.html#supervision" class="nav__sub-link"
+                  >Stručni nadzor</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="services.html#bim" class="nav__sub-link"
+                  >BIM <span class="u-font-size-large">/</span> Radionička
+                  dokumentacija</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="clients.html" class="nav__link">Naši klijenti</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link nav__link--active"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="mobile-nav__button">
+          <span class="mobile-nav__icon">&nbsp;</span>
+        </label>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a
+              href="index.html"
+              class="mobile-nav__link mobile-nav__link--active"
+              >Početna</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="about.html" class="mobile-nav__link">O nama</a>
+          </li>
+          <li id="mobile-services" class="mobile-nav__item">
+            <span class="mobile-nav__link"
+              >Usluge<span class="mobile-nav__down-caret"></span
+            ></span>
+            <ul class="mobile-nav__sub-list">
+              <li class="mobile-nav__sub-item">
+                <a href="services.html#calculation" class="mobile-nav__sub-link"
+                  >Projektiranje i statički proračun</a
+                >
+              </li>
+              <li class="mobile-nav__sub-item">
+                <a href="services.html#supervision" class="mobile-nav__sub-link"
+                  >Stručni nadzor</a
+                >
+              </li>
+              <li class="mobile-nav__sub-item">
+                <a href="services.html#bim" class="mobile-nav__sub-link"
+                  >BIM / Radionička dokumentacija</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="clients.html" class="mobile-nav__link">Naši klijenti</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="contact.html" class="mobile-nav__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-contact">
+        <article class="article article--narrow">
+          <div class="article__col-1-of-2">
+            <h2 class="article__heading u-margin-bottom-small">
+              Kontaktirajte <span class="article__heading--blue">nas</span>
+            </h2>
+            <p
+              class="article__paragraph article__paragraph--dark u-font-weight-heavy u-margin-bottom-ultrasmall u-text-align-left"
+            >
+              CURMAN Projekt d.o.o.
+            </p>
+            <p
+              class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall u-text-align-left"
+            >
+              <span class="u-font-weight-heavy">OIB:</span> 19072426286
+            </p>
+            <p
+              class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall u-text-align-left"
+            >
+              <span class="u-font-weight-heavy">Adresa:</span> Ozaljska 148, 10
+              000 Zagreb, Hrvatska
+            </p>
+            <p
+              class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall u-text-align-left"
+            >
+              <span class="u-font-weight-heavy">Mob:</span> +385 98 663 118
+            </p>
+            <p
+              class="article__paragraph article__paragraph--dark u-margin-bottom-ultrasmall u-text-align-left"
+            >
+              <span class="u-font-weight-heavy">E-mail:</span>
+              branimir.curman@gmail.com
+            </p>
+          </div>
+          <div class="article__col-1-of-2">
+            <div class="map">
+              <iframe
+                class="map__iframe"
+                src="https://maps.google.com/maps?q=ozaljska%20148%20zagreb&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__section footer__section--grey">
+        <div>
+          <p
+            class="footer__paragraph u-font-weight-heavy u-margin-bottom-ultrasmall"
+          >
+            CURMAN Projekt d.o.o.
+          </p>
+          <p class="footer__paragraph u-margin-bottom-ultrasmall">
+            Ozaljska 148, 10 000 Zagreb, Hrvatska
+          </p>
+          <p class="footer__paragraph u-margin-bottom-ultrasmall">
+            +385 98 663 118
+          </p>
+          <p class="footer__paragraph u-margin-bottom-ultrasmall">
+            branimir.curman@gmail.com
+          </p>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="index.html" class="footer__nav-link">Početna</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="about.html" class="footer__nav-link">O nama</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="services.html" class="footer__nav-link">Usluge</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="clients.html" class="footer__nav-link">Naši klijenti</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="contact.html" class="footer__nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section footer__section--blue">
+        <p class="footer__paragraph footer__paragraph--copyright">
+          Copyright &copy; 2019 CURMAN Projekt d.o.o. Sva prava pridržana.
+        </p>
+        <p class="footer__paragraph footer__paragraph--copyright">Izradio EM</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

@@ -7,7 +7,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding: 3rem 7rem;
+    padding: 2rem 7rem;
+
+    @include respond(phone-nar) {
+      padding: 2rem 4rem 1rem;
+    }
 
     &--grey {
       justify-content: space-around;
@@ -26,13 +30,16 @@
       @include respond(phone) {
         display: block;
       }
+
+      @include respond(phone-nar) {
+        padding: 1rem 4rem;
+      }
     }
   }
 
   &__paragraph {
     font-size: 1.4rem;
     color: $color-grey-lightest;
-    text-align: justify;
     padding-right: 4rem;
 
     &--copyright {
@@ -53,9 +60,8 @@
   }
 
   &__nav {
-
     &-item {
-      padding: .4rem 0;
+      padding: 0.4rem 0;
     }
 
     &-link {
@@ -67,8 +73,8 @@
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 600;
-        transition: all .2s;
-  
+        transition: all 0.2s;
+
         &:hover {
           color: $color-primary-light;
         }

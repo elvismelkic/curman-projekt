@@ -17,15 +17,23 @@
     padding: 4rem 1rem;
   }
 
+  @include respond(phone-nar) {
+    padding: 3rem 1rem;
+  }
+
   &--narrow {
     padding: 7rem 15rem;
 
     @include respond(tab-port) {
       padding: 4rem 10rem;
     }
-  
+
     @include respond(phone) {
       padding: 4rem 1rem;
+    }
+
+    @include respond(phone-nar) {
+      padding: 3rem 1rem;
     }
   }
 
@@ -36,6 +44,10 @@
     @include respond(tab-port) {
       width: 100%;
     }
+
+    @include respond(phone-nar) {
+      padding: 0 3rem;
+    }
   }
 
   &__col-1-of-1 {
@@ -45,6 +57,10 @@
     @include respond(tab-port) {
       width: 100%;
       padding: 0 7rem;
+    }
+
+    @include respond(phone-nar) {
+      padding: 0 3rem;
     }
 
     &--wide {
@@ -82,7 +98,7 @@
     align-items: center;
     overflow: hidden;
     border: 1px solid $color-primary;
-    box-shadow: 1px 5px 10px rgba($color-black, .25);
+    box-shadow: 1px 5px 10px rgba($color-black, 0.25);
 
     @include respond(tab-port) {
       display: none;
