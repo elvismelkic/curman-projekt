@@ -100,7 +100,6 @@
 
   &__button {
     display: block;
-    border: none;
     background-color: $color-white;
     height: 9rem;
     width: 9rem;
@@ -110,6 +109,11 @@
     z-index: 2000;
     text-align: center;
     cursor: pointer;
+
+    &,
+    &:active {
+      border: none;
+    }
   }
 
   &__list {
